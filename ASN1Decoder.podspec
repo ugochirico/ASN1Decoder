@@ -10,8 +10,6 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.10"
   s.source        = { :git => "https://github.com/filom/ASN1Decoder.git", :tag => s.version }
   s.source_files  = "ASN1Decoder/*.swift"
+  s.swift_version = '5.0'
   s.frameworks    = "Foundation"
-  s.pod_target_xcconfig =  {
-        'SWIFT_VERSION' => '5.0',
-  }
 end
